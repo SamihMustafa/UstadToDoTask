@@ -3,6 +3,7 @@ package com.media.ustadtodo.data;
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
 
 import java.util.UUID;
 
@@ -13,6 +14,7 @@ import java.util.UUID;
 public class ToDoTask {
 
     @PrimaryKey
+    @NonNull
     private String id;
 
     @ColumnInfo(name = "title")

@@ -91,6 +91,7 @@ public class MainActivityFragment extends Fragment {
                 viewModel.addTaskToUi(title.getText().toString(), desc.getText().toString());
             }
         });
+        dialog.show();
 
     }
 
